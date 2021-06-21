@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkDesBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(282, 80%, 41%);
+  --transparentWhite1: hsla(0, 0%, 100%, 0.75);
+  --transparentWhite2: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 15px;
+  background-color: var(--veryDarkBlue);
+  /*font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;*/
+ font-family: 'Inter', sans-serif;
+ overflow-x: hidden;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  height: 350px;
+  width: 80%;
+  min-width: 375px;
+  background-color: var(--darkDesBlue);
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+
+.info{
+  width: 55%;
+  padding: 5% 15% 5% 7%;
+}
+
+.info h1{
+  color: #fff;
+  font-size: 28px;
+  min-width: 295px;
+}
+
+.info p{
+  color: var(--transparentWhite1);
+  margin-top: 30px;
+  min-width: 260px;
+
+}
+
+.nr-container{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 260px;
+}
+
+ .nr{
+  display: flex;
+  flex-direction: column;
+  color: var(--transparentWhite1);
+  font-size: 15px;
+}
+
+ .nr span:first-of-type{
+  color: #fff;
+  font-size: 21px;
+}
+
+.image{
+  width: 45%;
+  height: 100%;
+  background-image: url('images/image-header-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accent{
+  width: 100%;
+  height: 100%;
+  background-color: hsl(282, 80%, 41%, 0.5);
+}
+
+@media (max-width:1000px){
+  body, .nr{
+    font-size: 14px;
+  }
+
+  .info h1{
+    margin-top: 20px;
+    font-size: 23px;
+  }
+
+  .nr span:first-of-type{
+    font-size: 17px;
+  }
+}
+
+@media (max-width:760px){
+
+  .nr{
+     font-size: 12px;
+   }
+
+  .info h1{
+    font-size: 21px;
+    min-width: 200px;
+  }
+
+  .info{
+    padding-right: 8%;
+  }
+
+  .info p, .nr-container{
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 689px){
+  .info h1{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:590px){
+
+  body, .nr{
+    font-size: 15px;
+  }
+
+ .card{
+   width: 80%;
+   height: 80%;
+   flex-direction: column-reverse;
+   text-align: center;
+ }
+
+ .info{
+   height: 55%;
+   padding: 6%;
+ }
+
+ .image{
+   height: 45%;
+ }
+
+ .info, .image{
+   width: 100%;
+ }
+
+.info h1{
+  font-size: 25px;
+}
+
+.nr-container{
+  margin: 60px 10% 0 10%;
+}
+
+.nr span:first-of-type{
+  font-size: 18px;
+}
+
+.image{
+  background-image: url('images/image-header-mobile.jpg');
+}
+
+}
+
+@media (max-width:460px){
+
+  body, .nr{
+    font-size: 14px;
+  }
+
+.info h1{
+  font-size: 21px;
+}
+
+}
