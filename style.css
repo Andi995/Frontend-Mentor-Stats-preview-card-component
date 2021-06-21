@@ -78,6 +78,7 @@ font-family: 'Lexend Deca', sans-serif;*/
  .nr span:first-of-type{
   color: #fff;
   font-size: 21px;
+  font-weight: bold;
 }
 
 .image{
@@ -150,12 +151,12 @@ font-family: 'Lexend Deca', sans-serif;*/
  }
 
  .info{
-   height: 55%;
+   height: 65%;
    padding: 6%;
  }
 
  .image{
-   height: 45%;
+   height: 35%;
  }
 
  .info, .image{
@@ -167,7 +168,7 @@ font-family: 'Lexend Deca', sans-serif;*/
 }
 
 .nr-container{
-  margin: 60px 10% 0 10%;
+  margin: 40px 10% 0 10%;
 }
 
 .nr span:first-of-type{
@@ -178,6 +179,10 @@ font-family: 'Lexend Deca', sans-serif;*/
   background-image: url('images/image-header-mobile.jpg');
 }
 
+.nr-container{
+  flex-direction: column;
+  gap: 20px;
+}
 }
 
 @media (max-width:460px){
