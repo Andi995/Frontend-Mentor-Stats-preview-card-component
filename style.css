@@ -148,15 +148,12 @@ font-family: 'Lexend Deca', sans-serif;*/
    height: 80%;
    flex-direction: column-reverse;
    text-align: center;
+    margin-top: 2.5rem;
  }
 
  .info{
-   height: 65%;
    padding: 6%;
- }
-
- .image{
-   height: 35%;
+   height: auto;
  }
 
  .info, .image{
